@@ -1,4 +1,23 @@
+import os
 import streamlit as st
+import openai
+
+# Configuration de la clé API OpenAI
+openai.api_key = os.getenv('OPENAI_API_KEY')
+
+# message d'erreur si la clé n'est pas trouvée
+if openai.api_key is None:
+    st.error("Clé API OpenAI non trouvée. Veuillez définir la variable d'environnement OPENAI_API_KEY.")
+    st.stop()
+
+# Fonction pour interagir avec l'API OpenAI
+def obtenir_texte_aventure(prompt):
+    response = openai.Completion.create(
+        engine="text-davinci-003",  # Ou "gpt-3.5-turbo", selon ce que vous utilisez
+        prompt=prompt,
+        max_tokens=100  # Ajustez selon la longueur de texte désirée
+    )
+    return response.choices[0].text.strip()
 
  # Initialisation de l'état
 if 'habilete' not in st.session_state:
@@ -9,18 +28,20 @@ if 'chance' not in st.session_state:
     st.session_state.chance = 6  # Valeur initiale de CHANCE
 if 'inventaire' not in st.session_state:
     st.session_state.inventaire = "Lampe, épée, potion de soin"  # Inventaire initial
+if 'texte_aventure' not in st.session_state:
+    st.session_state.texte_aventure = "Bienvenue dans votre aventure ! Que souhaitez-vous faire ?"
 
 # Titre de l'application
-st.title('Aventure Interactive')
+st.title('Le Sorcier de la Montagne de Feu')
 
 # Diviser l'écran en 3 colonnes pour la fenêtre de lecture, l'illustration, et la fiche du joueur
 col1, col2, col3 = st.columns([2, 1, 1])
 
 # Fenêtre de lecture
 with col1:
-    st.header("Fenêtre de lecture")
+    st.header("Aventure")
     # Remplacer ce texte par le paragraphe actuel de votre histoire
-    st.write("Ici s'affichera le texte du paragraphe que l'utilisateur doit lire.")
+    st.write(st.session_state.texte_aventure)
 
     # Champ pour la saisie du choix de l'utilisateur
     choix = st.text_input("Quel est votre choix ?")
