@@ -1,0 +1,5 @@
+{
+  "default": "Dans le cas où l'information donnée avant est suffisante, Ajoute une description détaillée de l'environnement et des émotions du personnage. Dans le cas contraire, n'envoie que le texte qui t'a été donné avec les choix",
+  "combat": "Décrivez une scène de combat intense où le personnage doit utiliser à la fois sa force et son intelligence.",
+  "decouverte": "Le personnage vient de découvrir un objet mystérieux. Décrivez sa réaction et l'apparence de l'objet."
+}
