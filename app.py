@@ -34,18 +34,16 @@ def obtenir_texte_enrichi(paragraphe_id, consigne):
     # Ajouter le prompt supplémentaire pour plus de contexte
     prompt += "\n\n" + prompt_supplementaire
 
-    response = openai.Completion.create(
-        engine="text-davinci-003", # Ou "gpt-3.5-turbo", selon ce que vous utilisez
-        prompt=prompt,
-        max_tokens=150,  # Ajustez selon le besoin
-        temperature=0.7,
-        top_p=1,
-        frequency_penalty=0,
-        presence_penalty=0
+    response = openai.ChatCompletion.create(
+        model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant."},
+            {"role": "user", "content": prompt}
+        ]
     )
     return response.choices[0].text.strip()
 
-# Initialisation de l'état (Cette section doit être revue car elle semble mal placée ou incorrecte dans son usage)
+# Initialisation de l'état
 if 'paragraphe_actuel' not in st.session_state:
     st.session_state.paragraphe_actuel = "1"  # Commencer par le paragraphe 1 par défaut
 
