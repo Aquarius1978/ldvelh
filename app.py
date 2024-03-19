@@ -87,36 +87,33 @@ with col1:
         st.markdown(regles_formattees, unsafe_allow_html=True)
         if st.button("J'ai lu les règles, commencer l'aventure"):
             st.session_state['regles_lues'] = True  # Marquer les règles comme lues
-            st.session_state['texte_genere'] = obtenir_texte_enrichi("1", "default")
+            # Ici, forcez la génération du texte pour le paragraphe 1
             st.session_state['paragraphe_actuel'] = "1"
+            st.session_state['texte_genere'] = obtenir_texte_enrichi("1", "default")
             st.experimental_rerun()
     else:
-        st.header("Aventure")    
-        paragraphe_id = st.session_state["paragraphe_actuel"]    
-        paragraphe = livre.get(paragraphe_id, {})    
+        st.header("Aventure")
+        # Assurez-vous que le paragraphe actuel soit correctement initialisé
+        paragraphe_id = st.session_state['paragraphe_actuel']
+        paragraphe = livre.get(paragraphe_id, {})
         consigne = 'default'
-    
-        # Vérifier si une balise "test" est présente et ajuster la consigne en conséquence
+
         test_tag = paragraphe.get("test", "")
         if "combat" in test_tag:
             consigne = "combat"
-        elif any(other_condition in test_tag for other_condition in ["decouverte", "autre_condition"]):  # Exemple pour d'autres conditions
-            consigne = "la_clé_correspondante_dans_prompts_json"  # Assurez-vous d'ajouter la clé correcte de prompts.json
+        elif any(other_condition in test_tag for other_condition in ["decouverte", "autre_condition"]):
+            consigne = "la_clé_correspondante_dans_prompts_json"
 
-        # Générer et afficher le texte enrichi après un choix
-        if not st.session_state['texte_genere'] or "generer_texte" in st.session_state and st.session_state["generer_texte"]:
+        # Si 'texte_genere' n'est pas encore défini ou si un nouveau texte doit être généré
+        if 'texte_genere' not in st.session_state or "generer_texte" in st.session_state and st.session_state["generer_texte"]:
             texte_enrichi = obtenir_texte_enrichi(paragraphe_id, consigne)
             st.session_state['texte_genere'] = texte_enrichi
-            st.session_state["generer_texte"] = False  # Réinitialiser pour le prochain choix
+            st.session_state["generer_texte"] = False
             st.write(texte_enrichi)
         else:
-            # Affichage initial du paragraphe
-            if "intro" in paragraphe:
-                st.write(paragraphe["intro"])
-    
-        # S'assurer que 'paragraphe' contient des choix avant de tenter de les afficher
+            st.write(st.session_state['texte_genere'])
+
         if "choices" in paragraphe:
-            # Gestion des choix
             for index, choix in enumerate(paragraphe["choices"], start=1):
                 choix_texte = choix.get("text", f"Choix {index}")
                 if st.button(choix_texte):
@@ -127,11 +124,10 @@ with col1:
                         st.experimental_rerun()
                     else:
                         st.error("Erreur: Ce choix ne mène nulle part. Veuillez choisir une autre option.")
-    
-        # Partie pour entrer un numéro de paragraphe directement
+
         st.write("Ou entrez un numéro de paragraphe pour y aller directement :")
         num_paragraphe = st.text_input("", key="num_paragraphe_direct")
- 
+
         if st.button("Aller au paragraphe", key="go_to_paragraph"):
             if num_paragraphe.isdigit() and num_paragraphe in livre:
                 st.session_state.paragraphe_actuel = num_paragraphe
@@ -139,6 +135,7 @@ with col1:
                 st.experimental_rerun()
             else:
                 st.error("Numéro de paragraphe invalide ou inexistant.")
+
 
 # Personnage
 with col2:
