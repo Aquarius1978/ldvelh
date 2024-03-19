@@ -115,7 +115,7 @@ with col1:
 
         if "choices" in paragraphe:
             for index, choix in enumerate(paragraphe["choices"], start=1):
-                choix_texte = choix.get("text", f"Choix {index}")
+                choix_texte = choix.get("text", f"Continuer")
                 if st.button(choix_texte):
                     goto = choix.get("goto")
                     if goto:
