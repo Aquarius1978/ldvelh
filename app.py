@@ -1,4 +1,3 @@
-from io import BytesIO
 import json
 import openai
 import os
@@ -52,41 +51,6 @@ def obtenir_texte_enrichi(paragraphe_id, consigne):
         texte_genere += "\n\nAdversaire(s) :\n" + infos_adversaires
 
     return texte_genere
-
-# Fonction qui génère une illustration basée sur le texte fourni en utilisant DALL·E d'OpenAI.
-def generer_illustration(texte):
-    try:
-        # Limite maximale de caractères pour le prompt
-        MAX_LENGTH = 1000
-
-        # Récupérer le prompt d'illustration à partir de prompts_supplementaires
-        prompt_illustration_base = prompts_supplementaires["illustration"]
-        
-        # Assurer que la longueur totale du prompt ne dépasse pas la limite maximale autorisée
-        prompt_illustration = f"{prompt_illustration_base}\n\nDescription: {texte}"
-        if len(prompt_illustration) > MAX_LENGTH:
-            # Tronquer le texte pour respecter la limite tout en conservant la partie initiale du prompt
-            prompt_illustration = prompt_illustration[:MAX_LENGTH]
-          
-        # Faire un appel à l'API OpenAI pour générer l'illustration
-        response = openai.Image.create(
-            prompt=prompt_illustration,
-            n=1,  # Nombre d'images à générer
-            size="1024x1024"  # Taille de l'image
-        )
-
-        # Cette ligne suppose que la réponse de l'API inclut directement l'URL, ajustez selon la structure réelle de la réponse
-        image_url = response.data[0]['url']
-
-        # Téléchargez l'image et convertissez-la en objet BytesIO pour l'affichage dans Streamlit
-        image_response = requests.get(image_url)
-        image_bytes = BytesIO(image_response.content)
-
-        return image_bytes
-
-    except Exception as e:
-        st.error(f"Une erreur est survenue lors de la génération de l'illustration : {e}")
-        return None
 
 with open('prompts.json', 'r') as file_prompt:
     prompts_supplementaires = json.load(file_prompt)
@@ -201,11 +165,3 @@ with col3:
     # Afficher le résultat du ou des dés
     if 'resultat_des' in st.session_state:
         st.write(st.session_state['resultat_des'])
-        
-    # Chance sur 6 de générer une illustration
-    if random.randint(1, 2) == 1:  # 1 chance sur 6
-        # Ici, vous devez définir comment récupérer le texte actuel affiché en col1
-        texte_illustration = st.session_state.get('texte_genere', '')
-        image_bytes = generer_illustration(texte_illustration)  # Assurez-vous que cette fonction retourne l'image correctement
-        if image_bytes:
-            st.image(image_bytes, caption="Illustration de la scène", width=200)  # Ajustez la largeur selon vos besoins
