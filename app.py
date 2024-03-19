@@ -201,7 +201,7 @@ with col3:
         st.write(st.session_state['resultat_des'])
         
     # Chance sur 6 de générer une illustration
-    if random.randint(1, 6) == 1:  # 1 chance sur 6
+    if random.randint(1, 2) == 1:  # 1 chance sur 6
         # Ici, vous devez définir comment récupérer le texte actuel affiché en col1
         texte_illustration = st.session_state.get('texte_genere', '')
         image_bytes = generer_illustration(texte_illustration)  # Assurez-vous que cette fonction retourne l'image correctement
