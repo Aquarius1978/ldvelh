@@ -1,0 +1,87 @@
+Un livre différent.
+
+Le sorcier de la montagne de feu n'est pas un livre comme les autres.
+Outre le livre lui-même, il vous faudra une paire de dés, un crayon et une gomme : muni de ces armes, vous pourrez alors devenir le héros d'une aventure périlleuse au cours de laquelle vous chercherez le trésor que le sorcier a caché. Ce trésor est dissimulé au cœur d'un dédale que vous explorerez vous-même. L'endroit est peuplé d'une multitude de monstres souterrains qu'il vous faudra combattre et tuer - faute de quoi, c'est vous qui perdrez la vie dans l'affrontement.
+Moitié roman, avec sa passionnante histoire, moitié jeu, avec ses méthodes de combats très sophistiquées, ce livre vous réserve de nombreuses surprises. A chaque page, vous aurez à relever de nouveaux défis, et les choix que vous ferez vous mèneront sur des chemins divers où vous aurez toutes sortes de batailles à livrer. Vous vous perdrez peut-être dans le labyrinthe ou un Être hideux minera vos forces, vous mourrez peut-être en combattant des Farfadets, ou vous serez confronté aux nombreuses créatures qui gardent le trésor du sorcier. Mais si vous faites preuve de courage, de détermination, et si la chance vous sourit, il se peut que vous réchappiez des traquenards et des batailles : alors, vous atteindrez les chambres secrètes du domaine sur lequel règne le sorcier et où il a caché son trésor. Mais prenez garde : la magie et les monstres que vous rencontrerez sur le chemin de cette chasse au trésor sont aussi vrais que nature. Aventure, sorcellerie, cette chasse vous tiendra en haleine des heures entières !
+
+Comment combattre les créatures de la montagne
+
+Avant de vous lancer dans cette aventure, il vous faut d'abord déterminer vos propres forces et faiblesses. Vous avez en votre possession une épée et un bouclier, ainsi qu'un sac à dos contenant des provisions (nourriture et boissons) pour le voyage. Afin de vous préparer à votre quête, vous vous êtes entraîné au maniement de l'épée et vous vous êtes exercé avec acharnement à accroître votre endurance. Si vous n'avez pas de dés, l'interface peut vous aider en le faisant à  votre place. 
+Les dés vous permettront de mesurer les effets de cette préparation en déterminant les points dont vous disposerez au départ en matière d'HABILETÉ et d'ENDURANCE. Sur l'interface, vous trouverez une Feuille d'Aventure que vous pourrez utiliser pour noter les détails d'une aventure. Vous pourrez inscrire dans les différentes cases vos points d'HABILETÉ et d'ENDURANCE.
+
+Habileté, Endurance et Chance
+
+Lancez un dé. Ajoutez 6 au chiffre obtenu et inscrivez le total dans la case HABILETÉ de la Feuille d'Aventure. Lancez ensuite les deux dés. Ajoutez 12 au chiffre obtenu et inscrivez le total dans la case ENDURANCE. Il existe également une case CHANCE. Lancez à nouveau un dé, ajoutez 6 au chiffre obtenu et inscrivez le total dans la case CHANCE.
+
+Pour des raisons qui vous seront expliquées plus loin, les points d'HABILETÉ, d'ENDURANCE et de CHANCE changent constamment au cours de l'aventure. Vous devrez garder un compte exact de ces points à l'aide des outils de l'interface. Bien que vous puissiez obtenir des points supplémentaires d'HABILETÉ, d'ENDURANCE et de CHANCE, ce total n'excédera jamais vos points de départ, sauf en de très rares occasions qui vous seraient alors signalées sur une page particulière.
+Vos points d'HABILETÉ reflètent votre art dans le maniement de l'épée et votre adresse au combat en général ; plus ils sont élevés, mieux c'est. 
+Vos points d'ENDURANCE traduisent votre force, votre volonté de survivre, votre détermination et votre forme physique et morale en général ; plus vos points d'ENDURANCE sont élevés, plus vous serez capable de survivre longtemps. 
+Avec vos points de CHANCE, vous saurez si vous êtes naturellement chanceux ou malchanceux. La chance
+et la magie sont des réalités de la vie dans l'univers imaginaire que vous allez découvrir.
+
+Batailles
+
+Il vous sera souvent demandé, au long des pages de ce livre, de combattre des créatures de toutes sortes. Parfois, vous aurez la possibilité de choisir la fuite, sinon - ou si vous décidez de toute façon de combattre -, il vous faudra mener la bataille comme suit : Tout d'abord, vous inscrirez les points d'HABILETÉ et d'ENDURANCE de la créature dans la première case vide des Rencontres avec un Monstre, sur votre Feuille d'Aventure. Les points correspondant à chaque créature sont donnés dans le livre chaque fois que vous faites une rencontre.
+Le combat se déroule alors ainsi :
+1. Jetez les deux dés pour la créature. Ajoutez ses points d'HABILETÉ au chiffre obtenu. Ce total vous donnera la Force d'Attaque de la créature.
+2. Jetez les deux dés pour vous-même. Ajoutez le chiffre obtenu à vos propres points d'HABILETÉ. Ce total représente votre Force d'Attaque.
+3. Si votre Force d'Attaque est supérieure à celle de la créature, vous l'avez blessée. Passez à l'étape numéro 4. Si la Force d'Attaque de la créature est supérieure à la vôtre, c'est elle qui vous a blessé. Passez à l'étape numéro 5. Si les deux Forces d'Attaque sont égales, vous avez chacun esquivé les coups de l'autre - reprenez le combat en recommençant à l'étape numéro 1.
+4. Vous avez blessé la créature, vous diminuez donc de deux points son ENDURANCE. Vous pouvez également vous servir de votre CHANCE pour lui faire plus de mal encore (voir règles plus loin).
+5. La créature vous a blessé, vous ôtez alors deux points à votre ENDURANCE. Vous pouvez également faire usage de votre CHANCE (voir règles plus loin).
+6. Modifiez votre score d'ENDURANCE ou celui de la créature, selon le cas. (Faites de même pour vos points de CHANCE si vous en avez fait usage.)
+7. Commencez le deuxième Assaut (en reprenant les étapes de 1 à 6).
+Vous poursuivrez ainsi l'ordre des opérations jusqu'à ce que vos points d'ENDURANCE ou ceux de la créature que vous combattez aient été réduits à zéro (mort).
+
+Fuite
+
+À certaines pages, vous aurez la possibilité de fuir un combat s'il vous semble devoir mal se terminer pour vous. Si vous prenez la fuite, cependant, la créature vous aura automatiquement infligé une blessure tandis que vous vous échappez. (Vous ôterez alors deux points à votre ENDURANCE.) C'est le prix de la couardise. Pour cette blessure, vous pourrez toutefois vous servir de votre CHANCE selon les règles habituelles (voir page 16). La Fuite n'est possible que si elle est spécifiée à la page où vous vous trouverez.
+
+Combat avec plus d'une Créature
+
+Si vous croisez plus d'une créature, lors de certaines rencontres, vous lirez à la page correspondante les instructions qui vous permettront de mener la bataille. Parfois, vous les affronterez comme si elles n'étaient qu'un seul monstre ; parfois, vous les combattrez une par une.
+
+Chance
+
+À plusieurs reprises au cours de votre aventure, lors de batailles ou dans des situations qui font intervenir la chance ou la malchance (les détails vous seront donnés dans les pages correspondantes) vous aurez la possibilité de faire appel à votre chance pour essayer de rendre une issue plus favorable. Mais attention ! L'usage de la chance comporte de grands risques et si vous êtes malchanceux, les conséquences pourraient se révéler désastreuses.
+Voici comment on peut se servir de la chance : jetez deux dés. Si le chiffre obtenu est égal ou inférieur à vos points de CHANCE, vous êtes chanceux, et le résultat tournera en votre faveur. Si ce chiffre est supérieur à vos points de CHANCE, vous êtes malchanceux et vous serez pénalisé.
+Cette règle s'intitule : Tentez votre Chance. Chaque fois que vous « Tenterez votre Chance », il vous faudra ôter un point à votre total de CHANCE. Ainsi, vous vous rendrez bientôt compte que plus vous vous fierez à votre chance, plus vous courrez de risques.
+
+Utilisation de la Chance dans les Combats
+
+À certaines pages du livre, il vous sera demandé de Tenter votre Chance et vous serez averti de ce qui vous arrivera selon que vous serez chanceux ou malchanceux. Lors des batailles, cependant, vous pourrez toujours choisir d'utiliser votre chance, soit pour infliger une blessure plus grave à une créature que vous venez de blesser, soit pour minimiser les effets d'une blessure qu'une créature vient de vous infliger.
+Si vous venez de blesser une créature, vous pouvez Tenter votre Chance à la manière décrite plus haut. Si vous êtes chanceux, vous avez infligé une blessure grave et vous pouvez ôtez deux points de plus au score d'ENDURANCE de la créature. Si vous êtes malchanceux, cependant, la blessure n'était qu'une simple écorchure, et vous devez rajouter un point au score d'ENDURANCE de la créature (c'est-à-dire qu'au lieu d'enlever les deux points correspondant à la blessure, vous n'aurez ôté qu'un seul point).
+Si la créature vient de vous blesser, vous pouvez Tenter votre Chance pour essayer d'en minimiser les effets. Si vous êtes chanceux, vous avez réussi à atténuer le coup. Rajoutez alors un point d'ENDURANCE (c'est-à-dire qu'au lieu de deux points ôtés à cause de la blessure, vous n'aurez qu'un point en moins). Si vous êtes malchanceux, le coup que vous avez pris était plus grave. Dans ce cas, enlevez encore un point à votre ENDURANCE.
+Rappelez-vous que vous devez soustraire un point de votre total de CHANCE chaque fois que vous Tentez votre Chance.
+
+Comment rétablir votre Habileté, votre Endurance et votre Chance
+
+Habileté
+
+Vos points d'HABILETÉ ne changeront pas beaucoup au cours de votre aventure. A l'occasion, il peut vous être demandé d'augmenter ou de diminuer votre score d'HABILETÉ. Une arme magique peut augmenter cette HABILETÉ, mais rappelez-vous qu'on ne peut utiliser qu'une seule arme à la fois ! Vous ne pouvez revendiquer deux bonus d'HABILETÉ sous prétexte que vous disposez de deux épées magiques. Vos points d'HABILETÉ ne peuvent jamais excéder leur total de départ sauf en certaines circonstances spécifiques. Boire la potion d'Adresse (voir plus loin) vous permettra à tout moment de rétablir votre HABILETÉ à son niveau de départ.
+
+Endurance et Provisions
+
+Vos points d'ENDURANCE changeront beaucoup au cours de votre aventure en fonction des combats que vous aurez à livrer à des monstres ou des tâches ardues qu'il vous faudra accomplir. Lorsque vous approcherez du but, votre niveau d'endurance sera peut-être dangereusement bas et les combats se révéleront alors pleins de risques, aussi, soyez prudent ! Votre sac à dos contient suffisamment de Provisions pour dix repas. Vous ne pouvez vous reposer et manger que lorsque vous en recevez l'autorisation au cours des pages et vous n'avez droit de prendre qu'un seul repas à la fois. Un repas vous rend 4 points d'ENDURANCE. Quand vous prenez un repas, ajoutez 4 points à votre ENDURANCE et enlevez-en 1 à vos Provisions. Une case réservée à l'Etat de vos Provisions figure sur la Feuille d'Aventure pour vous permettre de noter où en sont vos vivres. Rappelez-vous que vous avez un long chemin à parcourir, aussi, sachez utiliser vos Provisions avec prudence !
+Souvenez-vous également que vos points d'ENDURANCE ne peuvent pas excéder leur niveau de départ sauf si cela vous est spécifiquement indiqué sur une page du livre. Boire la Potion de Vigueur rétablira à tout moment votre ENDURANCE à son niveau initial.
+
+Chance
+
+Vos points de CHANCE augmentent au cours de l'aventure lorsque vous êtes particulièrement chanceux. Les détails vous seront donnés au long des pages. Rappelez-vous que, comme pour l'ENDURANCE et l'HABILETÉ, vos points de CHANCE ne peuvent excéder leur niveau de départ que si vous recevez des instructions spécifiques à ce sujet. Boire la Potion de Bonne Fortune (voir plus loin) rétablira à tout moment votre CHANCE à son niveau initial et augmentera d'un point votre CHANCE de départ.
+
+Equipements et potions
+
+Votre inventaire est déjà configuré pour refléter votre équipement de départ, mais vous devrez le compléter.
+Au début de votre aventure, vous ne disposerez que d'un équipement minimum, mais vous pourrez trouver d'autres accessoires au cours de vos voyages. Vous êtes armé d'une épée et vêtu d'une armure de cuir. Vous portez sur vos épaules un sac à dos dans lequel vous rangerez vos provisions et les trésors que vous ramasserez. Vous avez également une lanterne pour vous éclairer. Par ailleurs, vous avez droit à une bouteille contenant une potion magique qui vous aidera dans votre quête. Vous aurez à choisir entre les trois potions suivantes : La Potion d'Adresse qui vous rend vos points d'HABILETÉ. La Potion de Vigueur qui vous rend vos points d'ENDURANCE. La Potion de Bonne Fortune qui vous rend vos points de CHANCE en ajoutant 1 point à votre total de départ.
+Vous pouvez à tout moment boire l'une de ces potions au cours de votre aventure. En prenant une mesure de potion, vous retrouverez vos points d'HABILETÉ, d'ENDURANCE ou de CHANCE tels qu'ils étaient à leur niveau initial (et la Potion de Bonne Fortune ajoutera 1 point au total de CHANCE dont vous disposiez au départ. Lorsque vous retrouverez votre CHANCE, il faudra donc y ajouter ce point).
+Chaque bouteille de potion contient deux mesures, c'est-à-dire que vous pourrez retrouver deux fois vos points de départ, au cours d'une même aventure, dans la catégorie choisie. Chaque fois que vous buvez une mesure, notez-le sur votre Feuille d'Aventure. Rappelez-vous également que vous n'avez droit qu'à une seule des trois potions, aussi, choisissez-la avec discernement !
+
+Indications sur le jeu
+
+Il y a un bon chemin à trouver dans la montagne du sorcier, et il vous faudra plusieurs tentatives pour le découvrir. Prenez des notes et dessinez une carte au fur et à mesure de votre exploration. Cette carte vous servira lors de prochaines aventures et vous permettra d'avancer plus rapidement pour atteindre des endroits encore inconnus. Toutes les pièces ne contiennent pas de trésor ; certaines d'entre elles recèlent des pièges ou des monstres qui se révéleront sans aucun doute très dangereux. Il y a beaucoup de passages qui ne mènent nulle part, et il se peut que vous progressiez à l'intérieur de la montagne, sans pour autant découvrir le trésor du Sorcier si vous ne ramassez pas sur votre chemin certains objets bien précis. Vous trouverez diverses clés dans les salles du souterrain. Mais vous ne parviendrez à vous emparer du trésor qu'en ayant avec vous la clé ouvrant le coffre qui le contient. Il faudra vous attendre à de nombreuses déceptions lorsque vous serez dans la montagne au sommet de feu.
+Il n'y a qu'un minimum de risques à prendre pour découvrir le bon chemin, et n'importe quel joueur, même si ses points de départ sont faibles, peut trouver très facilement la voie. 
+Puisse la chance des dieux vous accompagner au long de votre aventure !
+Rumeurs
+Seul un aventurier téméraire entreprendrait une quête aussi périlleuse sans avoir préalablement essayé de savoir le plus de choses possibles sur la montagne au sommet de feu et ses trésors. Avant d'arriver au pied de la montagne, vous avez passé plusieurs jours avec les habitants d'un village des environs qui se trouve à deux jours de marche. Comme vous êtes sympathique, vous n'avez pas eu de difficultés à vous faire des amis parmi les paysans du coin. Bien qu'ils vous aient raconté beaucoup d'histoires au sujet du mystérieux sanctuaire du sorcier, vous ne pouvez pas avoir la certitude que tous ces récits - ni même un seul d'entre eux - se fondent sur des faits réels. Les villageois ont vu passer de nombreux aventuriers qui s'en allaient vers la montagne, mais très peu en sont revenus. C'est un voyage extrêmement dangereux, voilà au moins quelque chose dont vous êtes sûr. Parmi ceux qui ont reparu au village, il n'en est pas un seul qui ait envisagé de retourner dans la montagne au sommet de feu.
+Il semble qu'il y ait quelque vérité dans la rumeur selon laquelle le trésor du Sorcier serait enfermé dans un coffre somptueux doté de deux serrures dont les clés sont gardées par diverses créatures à l'intérieur des souterrains. Le Sorcier lui-même disposerait d'un puissant pouvoir. Certains le décrivent comme un vieillard, d'autres comme un jeune homme. D'après certains villageois, son pouvoir lui viendrait d'un jeu de cartes magiques, mais d'autres prétendent que sa force réside dans les gants de soie noire qu'il porte en permanence. L'accès à la montagne est gardé, paraît-il, par des lutins au visage constellé de verrues, des créatures stupides qui ne pensent qu'à manger et à boire. A mesure qu'on avance à l'intérieur, les créatures deviennent plus redoutables. Pour atteindre les salles intérieures, il faut franchir une rivière. Il y a un bac qui la traverse régulièrement, mais le passeur, à ce qu'on dit, tient à recevoir le prix de ses services, et il convient donc de se munir d'une Pièce d'Or pour le voyage (inscrivez-la sur votre Feuille d'Aventure). Les gens du cru vous conseillent également de dresser une bonne carte au fur et à mesure de vos déambulations, car sans cela vous seriez irrémédiablement perdu au cœur de la montagne. 
+Quand arrive enfin le jour du départ, tout le village vient vous souhaiter un voyage sans encombre. Beaucoup de femmes, ainsi que des enfants et des vieillards, ont la larme à l'œil. Vous ne pouvez vous empêcher de vous demander si ce ne sont pas des larmes de tristesse versées par des yeux qui ne vous reverront plus jamais vivant...
+Et maintenant, que l'aventure commence !
