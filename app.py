@@ -30,11 +30,12 @@ def obtenir_texte_enrichi(paragraphe_id, consigne):
     # Vérifier si la consigne est un combat et ajuster le prompt en conséquence
     prompt_supplementaire = prompts_supplementaires.get(consigne, "")
     prompt_complet = prompt + "\n\n" + prompt_supplementaire
+    role_system = prompts_supplementaires.get("role", "")
 
     response = openai.ChatCompletion.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role": "system", "content": "Tu es un conteur hors pair. Tu racontes l'histoire d'un aventurier qui explore un labyrinthe souterrain truffé de monstres, de pièges, de trésors. Le but de cet aventurier est de détruire le sorcier à la tête de ce labyrinthe. Tu t'adresse au lecteur par 'vous', car le lecteur est l'aventurier."},
+            {"role": "system", "content": role_system},
             {"role": "user", "content": prompt_complet}
         ]
     )
