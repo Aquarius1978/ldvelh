@@ -1,3 +1,4 @@
+from io import BytesIO
 import json
 import openai
 import os
