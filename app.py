@@ -65,10 +65,7 @@ def generer_illustration(texte):
         if len(prompt_illustration) > MAX_LENGTH:
             # Tronquer le texte pour respecter la limite tout en conservant la partie initiale du prompt
             prompt_illustration = prompt_illustration[:MAX_LENGTH]
-
-        # Assurez-vous d'avoir configuré votre clé API OpenAI
-        openai.api_key = 'your_openai_api_key'
-
+          
         # Faire un appel à l'API OpenAI pour générer l'illustration
         response = openai.Image.create(
             prompt=prompt_illustration,
