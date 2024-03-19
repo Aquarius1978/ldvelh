@@ -51,6 +51,43 @@ def obtenir_texte_enrichi(paragraphe_id, consigne):
 
     return texte_genere
 
+# Fonction qui génère une illustration basée sur le texte fourni en utilisant DALL·E d'OpenAI.
+def generer_illustration(texte):
+    try:
+        # Limite maximale de caractères pour le prompt
+        MAX_LENGTH = 1000
+
+        # Récupérer le prompt d'illustration à partir de prompts_supplementaires
+        prompt_illustration_base = prompts_supplementaires["illustration"]
+        
+        # Assurer que la longueur totale du prompt ne dépasse pas la limite maximale autorisée
+        prompt_illustration = f"{prompt_illustration_base}\n\nDescription: {texte}"
+        if len(prompt_illustration) > MAX_LENGTH:
+            # Tronquer le texte pour respecter la limite tout en conservant la partie initiale du prompt
+            prompt_illustration = prompt_illustration[:MAX_LENGTH]
+
+        # Assurez-vous d'avoir configuré votre clé API OpenAI
+        openai.api_key = 'your_openai_api_key'
+
+        # Faire un appel à l'API OpenAI pour générer l'illustration
+        response = openai.Image.create(
+            prompt=prompt_illustration,
+            n=1,  # Nombre d'images à générer
+            size="1024x1024"  # Taille de l'image
+        )
+
+        # Cette ligne suppose que la réponse de l'API inclut directement l'URL, ajustez selon la structure réelle de la réponse
+        image_url = response.data[0]['url']
+
+        # Téléchargez l'image et convertissez-la en objet BytesIO pour l'affichage dans Streamlit
+        image_response = requests.get(image_url)
+        image_bytes = BytesIO(image_response.content)
+
+        return image_bytes
+
+    except Exception as e:
+        st.error(f"Une erreur est survenue lors de la génération de l'illustration : {e}")
+        return None
 
 with open('prompts.json', 'r') as file_prompt:
     prompts_supplementaires = json.load(file_prompt)
@@ -165,3 +202,15 @@ with col3:
     # Afficher le résultat du ou des dés
     if 'resultat_des' in st.session_state:
         st.write(st.session_state['resultat_des'])
+        
+    if 'resultat_des' in st.session_state:
+        # Générer un nombre aléatoire entre 1 et 6
+        chance_illustration = random.randint(1, 6)
+        
+        # Vérifier si le nombre généré est 6 (1 chance sur 6)
+        if chance_illustration == 6:
+            # Générer l'illustration basée sur le texte de col1
+            illustration_path = generer_illustration(st.session_state['texte_genere'])
+            
+            # Afficher l'image
+            st.image(illustration_path, width=200)  # Adaptez width selon vos besoins
