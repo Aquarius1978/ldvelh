@@ -153,14 +153,16 @@ with col2:
 with col3:
     st.header("Lancer de dés")
     
+    # Bouton pour lancer un dé à 6 faces
     if st.button("Lancer un dé à 6 faces"):
-        st.session_state['resultat_de_6_faces'] = random.randint(1, 6)
+        resultat = random.randint(1, 6)
+        st.session_state['resultat_des'] = f"Résultat du dé à 6 faces: {resultat}"
     
-    if st.button("Lancer deux dés à 6 faces"):
-        st.session_state['resultat_deux_des'] = random.randint(1, 6) + random.randint(1, 6)
+    # Bouton pour lancer deux dés à 6 faces
+    elif st.button("Lancer deux dés à 6 faces"):
+        resultat = random.randint(1, 6) + random.randint(1, 6)
+        st.session_state['resultat_des'] = f"Résultat de deux dés à 6 faces: {resultat}"
     
-    if st.session_state['resultat_de_6_faces'] is not None:
-        st.write(f"Résultat du dé à 6 faces: {st.session_state['resultat_de_6_faces']}")
-    
-    if st.session_state['resultat_deux_des'] is not None:
-        st.write(f"Résultat de deux dés à 6 faces: {st.session_state['resultat_deux_des']}")
+    # Afficher le résultat du ou des dés
+    if 'resultat_des' in st.session_state:
+        st.write(st.session_state['resultat_des'])
