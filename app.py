@@ -159,7 +159,7 @@ with col3:
         st.session_state['resultat_des'] = f"Résultat du dé à 6 faces: {resultat}"
     
     # Bouton pour lancer deux dés à 6 faces
-    elif st.button("Lancer deux dés à 6 faces"):
+    if st.button("Lancer deux dés à 6 faces"):
         resultat = random.randint(1, 6) + random.randint(1, 6)
         st.session_state['resultat_des'] = f"Résultat de deux dés à 6 faces: {resultat}"
     
