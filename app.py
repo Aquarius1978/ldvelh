@@ -89,6 +89,7 @@ with col1:
             st.session_state['regles_lues'] = True  # Marquer les règles comme lues
             st.session_state['texte_genere'] = obtenir_texte_enrichi("1", "default")
             st.session_state['paragraphe_actuel'] = "1"
+            st.experimental_rerun()
     else:
         st.header("Aventure")    
         paragraphe_id = st.session_state["paragraphe_actuel"]    
