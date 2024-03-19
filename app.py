@@ -203,14 +203,10 @@ with col3:
     if 'resultat_des' in st.session_state:
         st.write(st.session_state['resultat_des'])
         
-    if 'resultat_des' in st.session_state:
-        # Générer un nombre aléatoire entre 1 et 6
-        chance_illustration = random.randint(1, 6)
-        
-        # Vérifier si le nombre généré est 6 (1 chance sur 6)
-        if chance_illustration == 6:
-            # Générer l'illustration basée sur le texte de col1
-            illustration_path = generer_illustration(st.session_state['texte_genere'])
-            
-            # Afficher l'image
-            st.image(illustration_path, width=200)  # Adaptez width selon vos besoins
+    # Chance sur 6 de générer une illustration
+    if random.randint(1, 6) == 1:  # 1 chance sur 6
+        # Ici, vous devez définir comment récupérer le texte actuel affiché en col1
+        texte_illustration = st.session_state.get('texte_genere', '')
+        image_bytes = generer_illustration(texte_illustration)  # Assurez-vous que cette fonction retourne l'image correctement
+        if image_bytes:
+            st.image(image_bytes, caption="Illustration de la scène", width=200)  # Ajustez la largeur selon vos besoins
