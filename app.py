@@ -3,7 +3,6 @@ import openai
 import os
 import random
 import re
-import requests
 import streamlit as st
 
 # Configuration et initialisation
