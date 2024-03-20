@@ -145,7 +145,7 @@ with col2:
     endurance = st.number_input("ENDURANCE", min_value=0, max_value=24, value=12)
     chance = st.number_input("CHANCE", min_value=0, max_value=12, value=6)
     # Exemple d'inventaire
-    inventaire = st.text_area("Inventaire", value="Lampe, épée, potion de soin")
+    inventaire = st.text_area("Inventaire", value="lanterne, épée, armure de cuir, sac à dos, potion de [quoi ?] 2 doses")
     bourse = st.number_input("OR", min_value=0, max_value=500, value=1)
 
 # Lancer de dés
